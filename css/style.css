@@ -1125,6 +1125,21 @@ address { font-style: normal; }
   gap: 1rem;
 }
 
+.review-screenshot {
+  width: 100%;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  box-shadow: var(--shadow-sm);
+}
+
+.screenshot-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 640px) {
+  .screenshot-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
 .screenshot-placeholder {
   aspect-ratio: 9/16;
   background: var(--off-white);
